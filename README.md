@@ -2,6 +2,14 @@
 
 This repository contains a PyTorch implementation of the Deep Q-Network (DQN) algorithm applied to the CartPole-v1 environment from OpenAI Gym. The code trains an agent to balance a pole on a moving cart by approximating the Q-function with a neural network.
 
+## How to Run
+
+0. **Set up Virtual Environment**
+   ```bash
+   conda create -n py312env python=3.12
+   ```
+1. 
+
 ## Features
 
 - **Discrete Action Space**: CartPole has two discrete actions (move left or move right).
@@ -31,5 +39,12 @@ This repository contains a PyTorch implementation of the Deep Q-Network (DQN) al
      5. Soft-update the target network every few steps.
 
 4. **Soft Update**
-   - Target Network partially updated every few steps with parameters from the Main Network, using the following equation:
+   - A fraction tau (e.g., 0.005) of the main network parameters are blended into the target network parameters, smoothing updates and preventing instability. \
    `θ⁻ ← τ * θ + (1 - τ) * θ⁻`
+
+5. **Hyperparameters**
+   - Learning rate (e.g., 1e-3)
+   - Discount factor gamma (e.g., 0.98)
+   - Epsilon decay schedule
+   - Soft update rate tau
+   - Batch size (e.g., 64)
