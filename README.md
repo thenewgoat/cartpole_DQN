@@ -30,6 +30,6 @@ This repository contains a PyTorch implementation of the Deep Q-Network (DQN) al
      4. If the buffer has enough samples, sample a minibatch and update the Q-network.
      5. Soft-update the target network every few steps.
 
-4. **Soft Update**  
-   ```python
-   target_param.data.copy_(tau * source_param.data + (1.0 - tau) * target_param.data)
+4. **Soft Update**
+   - Target Network partially updated every few steps with parameters from the Main Network, using the following equation:
+   `θ⁻ ← τ * θ + (1 - τ) * θ⁻`
