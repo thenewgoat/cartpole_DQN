@@ -68,3 +68,7 @@ This repository contains a PyTorch implementation of the Deep Q-Network (DQN) al
    - Epsilon decay schedule
    - Soft update rate tau
    - Batch size (e.g., 64)
+  
+## Notes
+
+To balance training time with model performance, an early termination condition was added to the train_agent function. Models terminated early should easily clear the 195 average score required, but may not always be perfect (i.e., always reach 500 points). As I chose not to set a seed for this notebook, running the notebook a few times should yield at least 1 model that can consistently last 500 steps. Removing the early termination condition may also allow a model to train for more episodes and become more likely to last 500 steps.
