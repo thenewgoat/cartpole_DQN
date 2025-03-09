@@ -7,8 +7,10 @@ This repository contains a PyTorch implementation of the Deep Q-Network (DQN) al
 0. **Set up Virtual Environment** (Not necessary)
    ```bash
    conda create -n py312env python=3.12
+   y
    conda activate py312env
    conda install jupyter
+   y
    conda install pip
    python -m ipykernel install --user --name py312env --display-name "Python 3.12 (py312env)"
    ```
