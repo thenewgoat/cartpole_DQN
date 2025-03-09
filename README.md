@@ -22,7 +22,7 @@ This repository contains a PyTorch implementation of the Deep Q-Network (DQN) al
    cd cartpole_DQN
    ```
    Open the notebook in this repository and select "Python 3.12 (py312env)" as the kernel.
-2. **Run the Notebook**
+2. **Run the Notebook**\
    Click on Run > Run All Cells
 
 ## Features
