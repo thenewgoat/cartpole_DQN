@@ -16,13 +16,13 @@ This repository contains a PyTorch implementation of the Deep Q-Network (DQN) al
    ```bash
    jupyter notebook
    ```
-   Open the notebook in this repository and select "Python 3.12 (py312env)" as the kernel.
+\
 1. **Clone this Repository**
    ```bash
    git clone https://github.com/thenewgoat/cartpole_DQN.git
    cd cartpole_DQN
    ```
-   Open the notebook in this repository and select "Python 3.12 (py312env)" as the kernel.
+   Open the notebook in this repository and select "Python 3.12 (py312env)" as the kernel.\
 2. **Run the Notebook**
    Click on Run > Run All Cells
 
